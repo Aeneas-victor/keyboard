@@ -1,0 +1,9 @@
+keyboard\delay.o: ..\Funciton\Delay.c
+keyboard\delay.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+keyboard\delay.o: .\RTE\_keyboard\RTE_Components.h
+keyboard\delay.o: ../Drivers/CMSIS/Include/core_cm3.h
+keyboard\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+keyboard\delay.o: ../Drivers/CMSIS/Include/cmsis_version.h
+keyboard\delay.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+keyboard\delay.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+keyboard\delay.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
