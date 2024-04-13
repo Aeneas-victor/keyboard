@@ -37,15 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-void myGPIO_Init()
-{
-	GPIO_InitTypeDef GPIO_InitStruct;
-    // 初始化引脚
-    GPIO_InitStruct.Pin = GPIO_PIN_0; // 设置引脚
-    GPIO_InitStruct.Mode = GPIO_MODE_INPUT; // 设置模式为输入
-    GPIO_InitStruct.Pull = GPIO_PULLUP; // 设置上拉
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct); // 初始化引脚
-}
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -94,31 +86,29 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-	  GPIO_InitTypeDef GPIO_InitStruct;
+//GPIO_InitTypeDef GPIO_InitStruct;
   __HAL_RCC_GPIOA_CLK_ENABLE();
-
-  GPIO_InitStruct.Pin = GPIO_PIN_6;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP; // 使用上拉电阻
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  
+//  GPIO_InitStruct.Pin = GPIO_PIN_6;
+//  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+//  GPIO_InitStruct.Pull = GPIO_PULLUP; // 使用上拉电阻
+//  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  myGPIO_Init();
+
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
+	MyGPIO_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	if(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0)==GPIO_PIN_RESET)
-	{
-		mykeyboard_KeyPress(V_key);
-	}	   
+	 
+	  matrix_scan_keypad();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

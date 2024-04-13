@@ -22,16 +22,23 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 E:\Project\STM32_KEIL_project\keyboard\MDK-ARM\keyboard.uvprojx
-Project File Date:  04/01/2024
+Project File Date:  04/04/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'keyboard'
-compiling main.c...
+compiling gpio.c...
+../Core/Inc/gpio.h(36): warning:  #1295-D: Deprecated declaration MyGPIO_Init - give arg types
+  void MyGPIO_Init();
+../Core/Inc/gpio.h(42): warning:  #1295-D: Deprecated declaration matrix_scan_keypad - give arg types
+  void matrix_scan_keypad();
+../Core/Src/gpio.c(64): warning:  #177-D: variable "GPIO_InitStruct"  was declared but never referenced
+  	GPIO_InitTypeDef GPIO_InitStruct={0};
+../Core/Src/gpio.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=12660 RO-data=312 RW-data=372 ZI-data=4740  
+Program Size: Code=14344 RO-data=312 RW-data=516 ZI-data=4740  
 FromELF: creating hex file...
-"keyboard\keyboard.axf" - 0 Error(s), 0 Warning(s).
+"keyboard\keyboard.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,7 +62,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

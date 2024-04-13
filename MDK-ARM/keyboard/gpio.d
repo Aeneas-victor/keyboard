@@ -29,3 +29,15 @@ keyboard\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 keyboard\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h
 keyboard\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h
 keyboard\gpio.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h
+keyboard\gpio.o: ../Core/Inc/keyboard_send.h
+keyboard\gpio.o: ../Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h
+keyboard\gpio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+keyboard\gpio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+keyboard\gpio.o: ../USB_DEVICE/Target/usbd_conf.h
+keyboard\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+keyboard\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+keyboard\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+keyboard\gpio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
+keyboard\gpio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+keyboard\gpio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+keyboard\gpio.o: ..\Funciton\Delay.h

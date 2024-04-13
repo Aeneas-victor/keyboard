@@ -604,6 +604,11 @@
               <FileType>5</FileType>
               <FilePath>..\Core\Inc\keyboard_send.h</FilePath>
             </File>
+            <File>
+              <FileName>gpio.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\gpio.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

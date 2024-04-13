@@ -33,13 +33,13 @@ extern "C" {
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
-
+void MyGPIO_Init();
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+void matrix_scan_keypad();
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
